@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Názvosloví Oxidů - Hra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Oxidy 🧪</h1>
+            <div id="stats" class="stats">
+                <span id="score">Skóre: 0</span>
+                <span id="streak">Série: 0</span>
+            </div>
+        </header>
+
+        <main id="game-screen">
+            <div class="card" id="question-card">
+                <div class="question-type" id="q-type">Z čeho na co?</div>
+                <div class="question-text" id="q-text">Hledám...</div>
+                
+                <div id="input-container" class="input-container">
+                    <input type="text" id="answer-input" placeholder="Tvoje odpověď..." autocomplete="off">
+                    <button id="submit-btn" class="primary-btn">Ověřit</button>
+                </div>
+
+                <div id="feedback" class="feedback"></div>
+            </div>
+
+            <div class="controls">
+                <button id="skip-btn" class="secondary-btn">Přeskočit</button>
+                <button id="mode-btn" class="secondary-btn">Změnit mód</button>
+            </div>
+        </main>
+
+        <div id="menu-screen" class="overlay hidden">
+            <div class="menu-content card">
+                <h2>Vyber si mód</h2>
+                <button class="mode-select primary-btn" data-mode="test">Ostrý test (10 otázek)</button>
+                <button class="mode-select primary-btn" data-mode="mix">Trénink: Mix všeho</button>
+                <button class="mode-select primary-btn" data-mode="name2formula">Trénink: Z názvu na vzorec</button>
+                <button class="mode-select primary-btn" data-mode="formula2name">Trénink: Ze vzorce na název</button>
+            </div>
+        </div>
+
+        <div id="results-screen" class="overlay hidden">
+            <div class="results-content card">
+                <h2>Výsledek testu</h2>
+                <div class="grade-container">
+                    <span>Známka:</span>
+                    <span id="final-grade" class="grade">?</span>
+                </div>
+                <div id="results-summary" class="results-summary">
+                    <!-- Mistakes will be listed here -->
+                </div>
+                <button id="close-results" class="primary-btn">Zpět do menu</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>Antigravity Chemistry v1.0</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
