@@ -1,0 +1,8 @@
+com.sindelarondra.oxidy.app-pngs-0 C:\Users\ondra\OneDrive\Dokumenty\!!ai\chemie\nazvoslovi oxidu\android\app\build\generated\res\pngs\debug
+com.sindelarondra.oxidy.app-resValues-1 C:\Users\ondra\OneDrive\Dokumenty\!!ai\chemie\nazvoslovi oxidu\android\app\build\generated\res\resValues\debug
+com.sindelarondra.oxidy.app-updated_navigation_xml-2 C:\Users\ondra\OneDrive\Dokumenty\!!ai\chemie\nazvoslovi oxidu\android\app\build\generated\updated_navigation_xml\debug
+com.sindelarondra.oxidy.app-packageDebugResources-3 C:\Users\ondra\OneDrive\Dokumenty\!!ai\chemie\nazvoslovi oxidu\android\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.sindelarondra.oxidy.app-packageDebugResources-4 C:\Users\ondra\OneDrive\Dokumenty\!!ai\chemie\nazvoslovi oxidu\android\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.sindelarondra.oxidy.app-debug-5 C:\Users\ondra\OneDrive\Dokumenty\!!ai\chemie\nazvoslovi oxidu\android\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.sindelarondra.oxidy.app-debug-6 C:\Users\ondra\OneDrive\Dokumenty\!!ai\chemie\nazvoslovi oxidu\android\app\src\debug\res
+com.sindelarondra.oxidy.app-main-7 C:\Users\ondra\OneDrive\Dokumenty\!!ai\chemie\nazvoslovi oxidu\android\app\src\main\res

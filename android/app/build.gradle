@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+import java.util.Properties
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withInputStream { localProperties.load(it) }
+}
+
+android {
+    namespace "com.sindelarondra.oxidy"
+    compileSdkVersion 34
+
+    defaultConfig {
+        applicationId "com.sindelarondra.oxidy"
+        minSdkVersion 24
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    signingConfigs {
+        release {
+            storeFile localProperties.getProperty('keystore.path') ? file(localProperties.getProperty('keystore.path')) : null
+            storePassword localProperties.getProperty('keystore.password')
+            keyAlias localProperties.getProperty('key.alias')
+            keyPassword localProperties.getProperty('key.password')
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+}

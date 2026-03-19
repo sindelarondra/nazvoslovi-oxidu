@@ -1,0 +1,20 @@
+<lint-module
+    format="1"
+    dir="C:\Users\ondra\OneDrive\Dokumenty\!!ai\chemie\nazvoslovi oxidu\android\app"
+    name=":app"
+    type="APP"
+    maven="Oxidy:app:unspecified"
+    agpVersion="9.1.0"
+    buildFolder="build"
+    bootClassPath="C:\Users\ondra\AppData\Local\Android\Sdk\platforms\android-34\android.jar;C:\Users\ondra\AppData\Local\Android\Sdk\build-tools\36.0.0\core-lambda-stubs.jar"
+    javaSourceLevel="11"
+    compileTarget="android-34"
+    neverShrinking="true"
+    highlightGradualR8Api="false">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>

@@ -1,0 +1,16 @@
+{
+  "name": "Názvosloví Oxidů",
+  "short_name": "Oxidy",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0c0e14",
+  "theme_color": "#4f46e5",
+  "description": "Procvičování názvosloví oxidů formou testů a her.",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
